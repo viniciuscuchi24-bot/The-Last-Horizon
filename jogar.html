@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>The Last Horizon</title>
+<link rel="stylesheet" href="css/lethal.css">
+</head>
+<body>
+<canvas id="c"></canvas>
+<canvas id="hud2d"></canvas>
+<div id="scanlines"></div>
+<div id="flash"></div>
+<div id="fade"></div>
+<div id="crosshair"></div>
+
+<!-- HUD -->
+<div id="hudL" class="hud">
+  <div class="row"><span class="lbl">VIDA</span><div class="bar"><div id="hpFill"></div></div></div>
+  <div class="row"><span class="lbl">FÔLEGO</span><div class="bar"><div id="stFill"></div></div></div>
+  <div class="row small"><span id="weight">0 lb</span> · <span id="credits">$0</span></div>
+</div>
+<div id="clock" class="hud"><div id="clockT">8:00 AM</div><div id="clockW"></div></div>
+<div id="slots" class="hud"></div>
+<div id="prompt" class="hud"></div>
+<div id="toast" class="hud"></div>
+<div id="latched"></div>
+
+<!-- telas -->
+<div id="transition"></div>
+<div id="spectate"><div>VOCÊ MORREU<br><small>assistindo... a nave volta quando alguém puxar a alavanca ou à meia-noite</small></div></div>
+<div id="deathScreen" class="screen"><div class="inner"><h1>VOCÊ MORREU</h1><p class="cause"></p></div></div>
+<div id="bigScreen" class="screen"><div class="inner"></div></div>
+<div id="pause" class="screen"><div class="inner"><h1>PAUSADO</h1><p>Clique para continuar</p>
+  <p class="keys">WASD andar · Shift correr · Ctrl agachar · Espaço pular · E pegar/interagir · G largar · 1-4/rodinha trocar item · Clique esq. usar · Clique dir. escanear · F lanterna · R recarregar</p></div></div>
+
+<div id="terminal">
+  <div class="termBox">
+    <pre id="termOut"></pre>
+    <div class="termLine"><span>&gt;</span><input id="termIn" autocomplete="off" spellcheck="false"><button id="termClose">ESC</button></div>
+  </div>
+</div>
+
+<div id="start" class="screen" style="display:flex">
+  <div class="inner">
+    <h1 class="title">TERROR COOP</h1>
+    <p class="sub">Colete sucata. Bata a cota. Volte antes da meia-noite.</p>
+    <p class="d">Você trabalha para a Empresa. A cada 3 dias, ela exige uma cota em dinheiro.
+      Pouse nas luas abandonadas, entre nas instalações, encontre sucata e venda no Posto da Empresa.
+      Nem tudo que está no escuro quer a mesma coisa que você.</p>
+    <div class="keys">
+      <span>WASD andar</span><span>Shift correr</span><span>Ctrl agachar</span><span>Espaço pular</span>
+      <span>E pegar / interagir</span><span>G largar</span><span>1-4 / rodinha trocar item</span>
+      <span>Clique esq. usar</span><span>Clique dir. escanear</span><span>F lanterna</span>
+    </div>
+    <div class="startRow"><button id="startBtn">COMEÇAR</button></div>
+    <p id="padHint" class="sub" style="display:none">🎮 Controle detectado — aperte A para começar</p>
+    <p class="hint">Dica: abra com um servidor local (ex: Live Server do VS Code) pra carregar os modelos 3D.</p>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+<script src="js/lc/00-config.js"></script>
+<script src="js/lc/01-assets.js"></script>
+<script src="js/lc/02-engine.js"></script>
+<script src="js/lc/03-audio.js"></script>
+<script src="js/lc/04-state.js"></script>
+<script src="js/lc/05-ship.js"></script>
+<script src="js/lc/06-exterior.js"></script>
+<script src="js/lc/06b-scenery.js"></script>
+<script src="js/lc/07-facility.js"></script>
+<script src="js/lc/08-traps.js"></script>
+<script src="js/lc/09-creatures.js"></script>
+<script src="js/lc/10-items.js"></script>
+<script src="js/lc/11-terminal.js"></script>
+<script src="js/lc/12-flow.js"></script>
+<script src="js/lc/13-hud-input.js"></script>
+<script src="js/lc/14-main.js"></script>
+<script src="js/lc/15-controles.js"></script>
+<script src="js/lc/16-menu.js"></script>
+<script src="js/lc/17-net.js"></script>
+<script src="js/lc/18-chat-voz.js"></script>
+</body>
+</html>

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE LAST HORIZON</title>
+    <meta name="description" content="The Last Horizon — jogo cooperativo de terror e exploração espacial. Jogue no PC ou no celular, sozinho ou com até 4 amigos.">
+    <meta name="theme-color" content="#ff7a1a">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="site/site.css">
+
+</head>
+
+
+<body>
+
+    <!-- =================================================
+         ABAS PRINCIPAIS
+    ================================================== -->
+    <header class="topo">
+        <a class="marca" href="#" data-aba="menu">THE LAST <span>HORIZON</span></a>
+
+        <nav class="abas" aria-label="Navegação principal">
+            <button class="aba ativa" type="button" data-aba="menu" aria-selected="true">Menu</button>
+            <button class="aba" type="button" data-aba="sobre" aria-selected="false">Sobre</button>
+            <button class="aba" type="button" data-aba="comojogar" aria-selected="false">Como jogar</button>
+            <button class="aba" type="button" data-aba="luas" aria-selected="false">Luas e criaturas</button>
+            <button class="aba" type="button" data-aba="contato" aria-selected="false">Contato</button>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- =================================================
+             ABA MENU
+        ================================================== -->
+        <section class="painel-aba" data-painel="menu">
+
+            <!-- CAPA -->
+            <div class="capa">
+
+                <div class="capa-texto">
+                    <p class="subtitulo">Terror cooperativo · Exploração espacial</p>
+
+                    <h1>THE LAST<br><span>HORIZON</span></h1>
+
+                    <p class="frase">
+                        Colete sucata. Bata a cota. <strong>Volte antes da meia-noite.</strong>
+                    </p>
+
+                    <p class="descricao">
+                        Você trabalha para a Empresa. Pouse em luas abandonadas, entre em
+                        instalações escuras, recolha o que tiver valor e volte para a nave
+                        antes que algo te encontre. Sozinho ou com até 3 amigos.
+                    </p>
+
+                    <div class="botoes">
+                        <a class="botao-jogar" href="jogar.html">▶ JOGAR</a>
+                        <a class="botao-sec" href="jogar.html?tela=multi">👥 JOGAR COM AMIGOS</a>
+                    </div>
+
+                    <ul class="selos">
+                        <li>🖥 PC</li>
+                        <li>📱 Celular</li>
+                        <li>🎮 Controle</li>
+                        <li>👥 Até 4 jogadores</li>
+                        <li>🎙 Voz por proximidade</li>
+                    </ul>
+                </div>
+
+                <figure class="capa-tela monitor">
+                    <img src="site/img/noite.jpg" alt="Um colosso caminhando ao entardecer na lua Cinzal" fetchpriority="high">
+                    <figcaption>REGISTRO 33-CINZAL · 7:30 PM</figcaption>
+                </figure>
+
+            </div>
+
+
+            <!-- COMO FUNCIONA -->
+            <div class="bloco">
+                <h2 class="titulo-bloco"><span>01</span> O turno de trabalho</h2>
+
+                <ol class="passos">
+                    <li>
+                        <b>Escolha a lua</b>
+                        <p>No terminal da nave, defina a rota e compre equipamento: lanterna, pá, spray, kit médico...</p>
+                    </li>
+                    <li>
+                        <b>Entre na instalação</b>
+                        <p>Corredores escuros, portas trancadas, armadilhas e criaturas que não querem visita.</p>
+                    </li>
+                    <li>
+                        <b>Traga a sucata</b>
+                        <p>Largue tudo dentro da nave. À meia-noite ela decola sozinha, com ou sem você.</p>
+                    </li>
+                    <li>
+                        <b>Bata a cota</b>
+                        <p>Venda no 71-Posto. Se não alcançar a cota no prazo, a Empresa te demite.</p>
+                    </li>
+                </ol>
+            </div>
+
+
+            <!-- GALERIA -->
+            <div class="bloco">
+                <h2 class="titulo-bloco"><span>02</span> Imagens do jogo</h2>
+
+                <div class="galeria">
+                    <button class="foto grande" data-legenda="Tecelã — aranha que tece teias nos corredores da instalação">
+                        <img src="site/img/tecela.jpg" alt="Aranha Tecelã num corredor da instalação" loading="lazy">
+                        <span>Tecelã</span>
+                    </button>
+                    <button class="foto" data-legenda="12-Ferrugem — deserto enferrujado ao pôr do sol">
+                        <img src="site/img/deserto.jpg" alt="A nave pousada no deserto da lua Ferrugem" loading="lazy">
+                        <span>12-Ferrugem</span>
+                    </button>
+                    <button class="foto" data-legenda="47-Musgo — floresta enevoada onde os colossos caminham">
+                        <img src="site/img/floresta.jpg" alt="A nave na floresta da lua Musgo" loading="lazy">
+                        <span>47-Musgo</span>
+                    </button>
+                    <button class="foto" data-legenda="Juntador — guarda o ninho de sucata e não gosta de ladrões">
+                        <img src="site/img/juntador.jpg" alt="Besouro Juntador no corredor" loading="lazy">
+                        <span>Juntador</span>
+                    </button>
+                    <button class="foto" data-legenda="88-Geada — nevasca e uma mansão cheia de coisas caras">
+                        <img src="site/img/neve.jpg" alt="Planície congelada da lua Geada" loading="lazy">
+                        <span>88-Geada</span>
+                    </button>
+                    <button class="foto" data-legenda="O terminal da nave: rotas, loja e bestiário">
+                        <img src="site/img/ship.jpg" alt="Terminal verde da nave mostrando as luas" loading="lazy">
+                        <span>O terminal</span>
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- RECURSOS -->
+            <div class="bloco">
+                <h2 class="titulo-bloco"><span>03</span> O que tem no jogo</h2>
+
+                <div class="recursos">
+                    <article>
+                        <i>👥</i>
+                        <h3>Co-op até 4</h3>
+                        <p>Um cria a sala, passa o código e os amigos entram direto na nave.</p>
+                    </article>
+                    <article>
+                        <i>🎙</i>
+                        <h3>Voz por proximidade</h3>
+                        <p>Só quem está perto te escuta. E as criaturas também.</p>
+                    </article>
+                    <article>
+                        <i>📱</i>
+                        <h3>PC, celular e controle</h3>
+                        <p>Botões de toque ajustáveis, teclas configuráveis e suporte a controle.</p>
+                    </article>
+                    <article>
+                        <i>🌑</i>
+                        <h3>7 luas</h3>
+                        <p>Deserto, cinzas, floresta, cânion industrial, nevasca, abismo e o posto da Empresa.</p>
+                    </article>
+                    <article>
+                        <i>👁</i>
+                        <h3>14 criaturas</h3>
+                        <p>Cada uma com um jeito diferente de caçar. Escaneie para aprender no bestiário.</p>
+                    </article>
+                    <article>
+                        <i>💾</i>
+                        <h3>Contas e saves</h3>
+                        <p>3 saves por conta. O jogo salva sempre que a nave volta para a órbita.</p>
+                    </article>
+                </div>
+            </div>
+
+
+            <!-- CHAMADA FINAL -->
+            <div class="chamada">
+                <p>A nave decola à meia-noite.</p>
+                <a class="botao-jogar" href="jogar.html">▶ COMEÇAR TURNO</a>
+                <small>Roda direto no navegador. Não precisa instalar nada.</small>
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ABA SOBRE
+        ================================================== -->
+        <section class="painel-aba painel-informativo" data-painel="sobre" hidden>
+
+            <h2>Sobre o jogo</h2>
+            <p>
+                <strong>THE LAST HORIZON</strong> é um jogo cooperativo de terror e exploração
+                planetária. A tripulação trabalha para a Empresa, uma corporação que cobra uma
+                cota de sucata a cada três dias. Para pagar, é preciso pousar em luas
+                abandonadas, explorar instalações escuras e voltar vivo com os objetos de valor.
+            </p>
+            <p>
+                Cada lua tem clima, terreno e perigos diferentes. Dentro das instalações há
+                portas trancadas, torretas, minas e criaturas que caçam pelo som, pela visão ou
+                esperam no teto. Do lado de fora, quando a noite chega, coisas maiores aparecem.
+            </p>
+
+            <h2>Sobre o projeto</h2>
+            <p>
+                O jogo foi desenvolvido para a disciplina de <strong>Programação III</strong> do
+                Curso Técnico Integrado ao Ensino Médio em Desenvolvimento de Sistemas do
+                <strong>IF-SC</strong>. A inspiração é o jogo <em>Lethal Company</em>: a ideia foi
+                recriar as mecânicas principais (cota, luas, criaturas, armadilhas e co-op) com
+                cenários e criaturas próprios.
+            </p>
+
+            <h3>Tecnologias usadas</h3>
+            <ul class="tags">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>three.js (WebGL)</li>
+                <li>Web Audio</li>
+                <li>WebRTC (voz e P2P)</li>
+                <li>WebSocket</li>
+                <li>Node.js</li>
+                <li>Gamepad API</li>
+            </ul>
+            <p>
+                Todos os sons do jogo são sintetizados por código e as fases são geradas
+                proceduralmente: cada pouso cria uma instalação diferente.
+            </p>
+
+            <figure class="monitor pequeno">
+                <img src="site/img/menu.jpg" alt="Menu inicial do jogo" loading="lazy">
+            </figure>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ABA COMO JOGAR
+        ================================================== -->
+        <section class="painel-aba painel-informativo" data-painel="comojogar" hidden>
+
+            <h2>Como jogar</h2>
+            <p>
+                Aperte <strong>JOGAR</strong>, crie uma conta (pode ser só neste aparelho) e
+                escolha um save. Na nave, use o <strong>terminal</strong> para escolher a lua e
+                puxe a <strong>alavanca</strong> para pousar.
+            </p>
+
+            <div class="controles">
+                <div>
+                    <h3>🖥 PC</h3>
+                    <table>
+                        <tr><td>W A S D</td><td>andar</td></tr>
+                        <tr><td>Shift</td><td>correr</td></tr>
+                        <tr><td>Ctrl</td><td>agachar</td></tr>
+                        <tr><td>Espaço</td><td>pular</td></tr>
+                        <tr><td>E</td><td>pegar / interagir</td></tr>
+                        <tr><td>G</td><td>largar item</td></tr>
+                        <tr><td>Clique esq.</td><td>usar item</td></tr>
+                        <tr><td>Clique dir.</td><td>escanear</td></tr>
+                        <tr><td>F</td><td>lanterna</td></tr>
+                        <tr><td>1 a 4</td><td>trocar item</td></tr>
+                        <tr><td>T</td><td>chat</td></tr>
+                        <tr><td>V (segurar)</td><td>falar</td></tr>
+                    </table>
+                    <p class="nota">Todas as teclas podem ser trocadas em Configurações → Teclado.</p>
+                </div>
+                <div>
+                    <h3>📱 Celular</h3>
+                    <p>Deite o celular. O lado esquerdo da tela é o joystick e o direito serve para olhar.</p>
+                    <p>Os botões (USAR, E, PULAR, SCAN...) podem ser movidos e redimensionados em
+                        Configurações → Toque → Editar posição dos botões.</p>
+                    <p>No multiplayer aparecem os botões 💬 (chat) e 🎙 (segure para falar).</p>
+                </div>
+                <div>
+                    <h3>🎮 Controle</h3>
+                    <p>Conecte um controle de Xbox ou PlayStation (USB ou Bluetooth) e aperte qualquer botão.</p>
+                    <p>Analógico esquerdo anda, direito olha. Os botões podem ser trocados em
+                        Configurações → Controle.</p>
+                </div>
+            </div>
+
+            <h2>Jogar com amigos</h2>
+            <ol class="lista-passos">
+                <li>Um de vocês vai em <strong>MULTIPLAYER → CRIAR SALA</strong> e escolhe o save. Esse é o host.</li>
+                <li>Aparece um <strong>código</strong> (ex: <code>K7P2X</code>) e um link de convite. Mande para os amigos.</li>
+                <li>Os amigos abrem este site, apertam <strong>JOGAR COM AMIGOS</strong>, digitam o código e entram direto na nave.</li>
+                <li>No jogo, aperte <strong>Esc</strong> para ver o código de novo e quem está na sala.</li>
+            </ol>
+            <p class="nota">
+                O chat de voz usa o microfone: na primeira vez o navegador pergunta se pode usar.
+                Você só ouve quem está perto. Falar faz barulho e atrai criaturas.
+            </p>
+
+            <h2>Dicas de sobrevivência</h2>
+            <ul class="dicas">
+                <li>Compre uma lanterna antes de tudo. A instalação é escura.</li>
+                <li>Use o spray para marcar o caminho de volta nas paredes.</li>
+                <li>Escaneie (clique direito) para ver o valor da sucata e registrar criaturas no bestiário.</li>
+                <li>No último dia do prazo a Empresa paga 100% do valor da sucata.</li>
+                <li>Se todo mundo morrer, toda a sucata da nave é perdida.</li>
+            </ul>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ABA LUAS E CRIATURAS
+        ================================================== -->
+        <section class="painel-aba painel-informativo largo" data-painel="luas" hidden>
+
+            <h2>Luas</h2>
+            <p>Use o comando <code>ROTA [lua]</code> no terminal da nave. As luas mais perigosas custam créditos.</p>
+
+            <div class="luas">
+                <article class="lua com-img">
+                    <div class="lua-fundo" style="background-image:url(site/img/deserto.jpg)"></div>
+                    <span class="risco">Risco D</span>
+                    <h3>12-Ferrugem</h3>
+                    <p>Deserto enferrujado e quente. Pouca sucata, poucas ameaças. Bom pra começar.</p>
+                    <small>Grátis</small>
+                </article>
+                <article class="lua com-img">
+                    <div class="lua-fundo" style="background-image:url(site/img/noite.jpg)"></div>
+                    <span class="risco">Risco D</span>
+                    <h3>33-Cinzal</h3>
+                    <p>Morros de cinza vulcânica. Um verme enorme vive sob a superfície.</p>
+                    <small>Grátis</small>
+                </article>
+                <article class="lua com-img">
+                    <div class="lua-fundo" style="background-image:url(site/img/floresta.jpg)"></div>
+                    <span class="risco">Risco C</span>
+                    <h3>47-Musgo</h3>
+                    <p>Floresta úmida e enevoada. Colossos caminham entre as árvores durante o dia.</p>
+                    <small>Grátis</small>
+                </article>
+                <article class="lua">
+                    <span class="risco">Risco B</span>
+                    <h3>21-Fornalha</h3>
+                    <p>Cânion industrial abandonado, com tanques de combustível e uma fábrica enorme.</p>
+                    <small>Grátis</small>
+                </article>
+                <article class="lua com-img">
+                    <div class="lua-fundo" style="background-image:url(site/img/neve.jpg)"></div>
+                    <span class="risco">Risco A</span>
+                    <h3>88-Geada</h3>
+                    <p>Planície congelada sob nevasca. Uma mansão antiga cheia de objetos caros... e coisas famintas.</p>
+                    <small>$550</small>
+                </article>
+                <article class="lua perigo">
+                    <span class="risco">Risco S</span>
+                    <h3>09-Abismo</h3>
+                    <p>Uma lua vermelha onde o sol quase não aparece. A instalação é gigantesca e ninguém volta igual.</p>
+                    <small>$700</small>
+                </article>
+                <article class="lua posto">
+                    <span class="risco">Empresa</span>
+                    <h3>71-Posto</h3>
+                    <p>O posto da Empresa. Venda sua sucata no balcão. Não há perigo aqui... provavelmente.</p>
+                    <small>Grátis</small>
+                </article>
+            </div>
+
+            <h2>Bestiário</h2>
+            <p>Os registros completos aparecem no terminal depois que você escaneia a criatura.</p>
+
+            <div class="bestiario">
+                <article><b>Juntador</b><em>dentro</em><p>Besouro que guarda um ninho de sucata. Pegue algo dele e ele ataca.</p></article>
+                <article><b>Lacrador</b><em>dentro</em><p>Larva que espera no teto e cai na cabeça de quem passa.</p></article>
+                <article><b>Tecelã</b><em>dentro</em><p>Aranha enorme. Se você tocar numa teia, ela sabe onde você está.</p></article>
+                <article><b>Espreitador</b><em>dentro</em><p>Te segue pelas costas. Olhe para ele e ele recua; encare demais e ele fica furioso.</p></article>
+                <article><b>Manequim</b><em>dentro · imortal</em><p>Só se move quando ninguém está olhando.</p></article>
+                <article><b>Rasteiro</b><em>dentro</em><p>Rápido em linha reta, péssimo nas curvas.</p></article>
+                <article><b>Piche</b><em>dentro · imortal</em><p>Poça viva que se arrasta devagar. Só não fique parado.</p></article>
+                <article><b>Caixa de Música</b><em>dentro · imortal</em><p>Aparece sempre um pouco atrás de você. Quando a melodia acaba...</p></article>
+                <article><b>Sentinela</b><em>dentro</em><p>Robô armado. Não se mexa enquanto o sensor vermelho estiver aceso.</p></article>
+                <article><b>Sósia</b><em>dentro</em><p>Parece um tripulante. O visor é vazio por dentro.</p></article>
+                <article><b>Mímico</b><em>dentro</em><p>Imita sucata valiosa. Valor bom demais pra ser verdade.</p></article>
+                <article><b>Farejador</b><em>fora</em><p>Cão cego que caça pelo som. Ande agachado perto deles.</p></article>
+                <article><b>Colosso</b><em>fora · imortal</em><p>Quase quinze metros de altura. Se te vir, te persegue.</p></article>
+                <article><b>Verme colossal</b><em>fora · imortal</em><p>O chão treme antes do ataque. Corra.</p></article>
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ABA CONTATO
+        ================================================== -->
+        <section class="painel-aba painel-informativo" data-painel="contato" hidden>
+
+            <h2>Contato</h2>
+            <p><strong>Desenvolvedor:</strong> Vinicius Arthur Batista Cuchi</p>
+            <p><strong>Escola:</strong> IF-SC — Curso Técnico Integrado ao Ensino Médio em Desenvolvimento de Sistemas</p>
+            <p><strong>Disciplina:</strong> Programação III</p>
+            <p><strong>Professora:</strong> Lara Popov Zambiasi Bazzi Oberderfer</p>
+            <!-- coloque seu e-mail aqui se quiser:
+            <p><strong>E-mail:</strong> seuemail@exemplo.com</p>
+            -->
+
+            <h3>Achou um bug?</h3>
+            <p>
+                Conte o que aconteceu, em qual aparelho (PC ou celular) e em qual lua.
+                Se der, mande um print.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- =================================================
+         RODAPÉ
+    ================================================== -->
+    <footer>
+        THE LAST HORIZON
+        <br>
+        Volte antes da meia-noite.
+    </footer>
+
+
+    <!-- visualizador das imagens da galeria -->
+    <div class="visualizador" hidden>
+        <button class="fechar" type="button" aria-label="Fechar">✕</button>
+        <img src="" alt="">
+        <p></p>
+    </div>
+
+
+    <script>
+        (() => {
+            // ---------- abas (igual ao site do Relíquia das Eras)
+            const abas = document.querySelectorAll(".aba");
+            const paineis = document.querySelectorAll("[data-painel]");
+
+            function abrirAba(nome) {
+                abas.forEach((aba) => {
+                    const ativa = aba.dataset.aba === nome;
+                    aba.classList.toggle("ativa", ativa);
+                    aba.setAttribute("aria-selected", ativa ? "true" : "false");
+                });
+                paineis.forEach((painel) => {
+                    painel.hidden = painel.dataset.painel !== nome;
+                });
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            }
+
+            document.querySelectorAll("[data-aba]").forEach((el) => {
+                el.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    abrirAba(el.dataset.aba);
+                });
+            });
+
+            // ---------- galeria: clique na foto para ver grande
+            const vis = document.querySelector(".visualizador");
+            const visImg = vis.querySelector("img");
+            const visTxt = vis.querySelector("p");
+
+            document.querySelectorAll(".foto").forEach((foto) => {
+                foto.addEventListener("click", () => {
+                    const img = foto.querySelector("img");
+                    visImg.src = img.src;
+                    visImg.alt = img.alt;
+                    visTxt.textContent = foto.dataset.legenda;
+                    vis.hidden = false;
+                });
+            });
+
+            function fechar() { vis.hidden = true; }
+            vis.addEventListener("click", fechar);
+            document.addEventListener("keydown", (e) => { if (e.key === "Escape") fechar(); });
+        })();
+    </script>
+
+</body>
+
+</html>
